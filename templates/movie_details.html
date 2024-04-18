@@ -1,0 +1,603 @@
+{% extends 'index.html' %}
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+{% block title %}
+	Prime Movie : {{movie_details.name}}
+{% endblock %}
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Movies Pro Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" type="text/css" media="all" />
+<!-- pop-up -->
+<link href="{% static 'css/popuo-box.css' %}" rel="stylesheet" type="text/css" media="all" />
+<!-- //pop-up -->
+<link href="{% static 'css/easy-responsive-tabs.css' %}" rel='stylesheet' type='text/css'/>
+<link rel="stylesheet" type="text/css" href="{% static 'css/zoomslider.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+<link href="{% static 'css/font-awesome.css' %}" rel="stylesheet">
+<script type="text/javascript" src="{% static 'js/modernizr-2.6.2.min.js' %}"></script>
+<!--/web-fonts-->
+<link href='//fonts.googleapis.com/css?family=Tangerine:400,700' rel='stylesheet' type='text/css'>
+<link href="//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900" rel="stylesheet">
+<link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<!--//web-fonts-->
+</head>
+<body>
+<!--/main-header-->
+
+{% block content %}
+<div class="w3_content_agilleinfo_inner">
+						<div class="agile_featured_movies">
+				            <div class="inner-agile-w3l-part-head">
+					            <h3 class="w3l-inner-h-title">Movie Details</h3>
+								<p class="w3ls_head_para"></p>
+							</div>
+							   <div class="latest-news-agile-info">
+								   <div class="col-md-12 latest-news-agile-left-content">
+											<div class="single video_agile_player">
+
+<!--										            <div class="video-grid-single-page-agileits">-->
+														<div data-video="f2Z65fobH2I" id="img" style="margin-left:380px;"> <img src="{{movie_details.image.url}}" alt="" class="img-responsive"  style="width:470px;height:600px;"/> </div>
+<!--													</div>-->
+<!--													 <h4>Force 2 | Official Trailer | John Abraham, Sonakshi Sinha and Tahir Raj Bhasin</h4>-->
+
+										    </div>
+<!--											<div class="single-agile-shar-buttons">-->
+<!--											    <h5 >Share This :</h5>-->
+<!--													<ul>-->
+<!--														<li>-->
+<!--															<div class="fb-like" data-href="https://www.facebook.com/w3layouts" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>-->
+<!--															<script>(function(d, s, id) {-->
+<!--															  var js, fjs = d.getElementsByTagName(s)[0];-->
+<!--															  if (d.getElementById(id)) return;-->
+<!--															  js = d.createElement(s); js.id = id;-->
+<!--															  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.7";-->
+<!--															  fjs.parentNode.insertBefore(js, fjs);-->
+<!--															}(document, 'script', 'facebook-jssdk'));</script>-->
+<!--														</li>-->
+<!--														<li>-->
+<!--															<div class="fb-share-button" data-href="https://www.facebook.com/w3layouts" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2Fw3layouts&amp;src=sdkpreparse">Share</a></div>-->
+<!--														</li>-->
+<!--														<li class="news-twitter">-->
+<!--															<a href="https://twitter.com/w3layouts" class="twitter-follow-button" data-show-count="false">Follow @w3layouts</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>-->
+<!--														</li>-->
+<!--														<li>-->
+<!--															<a href="https://twitter.com/intent/tweet?screen_name=w3layouts" class="twitter-mention-button" data-show-count="false">Tweet to @w3layouts</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>-->
+<!--														</li>-->
+<!--														<li>-->
+<!--															&lt;!&ndash; Place this tag where you want the +1 button to render. &ndash;&gt;-->
+<!--															<div class="g-plusone" data-size="medium"></div>-->
+
+<!--															&lt;!&ndash; Place this tag after the last +1 button tag. &ndash;&gt;-->
+<!--															<script type="text/javascript">-->
+<!--															  (function() {-->
+<!--																var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;-->
+<!--																po.src = 'https://apis.google.com/js/platform.js';-->
+<!--																var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);-->
+<!--															  })();-->
+<!--															</script>-->
+<!--														</li>-->
+<!--													</ul>-->
+<!--											</div>-->
+<!--										<div class="admin-text" style="">-->
+<!--												<h5>WRITTEN BY ADMIN</h5>-->
+<!--												<div class="admin-text-left">-->
+<!--													<a href="#"><img src="images/admin.jpg" alt=""></a>-->
+<!--												</div>-->
+<!--												<div class="admin-text-right">-->
+<!--													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,There are many variations of passages of Lorem Ipsum available,-->
+<!--													sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>-->
+<!--													<span>View all posts by :<a href="#"> Admin </a></span>-->
+<!--												</div>-->
+<!--												<div class="clearfix"> </div>-->
+<!--										</div>-->
+										<div class="all-comments-info">
+<!--							<h3 class="w3l-inner-h-title ">Single Page</h3>-->
+							<div class="media response-info media-left response-text-left">
+
+
+<!--									<a href="#">-->
+<!--										<img class="media-object" src="images/admin.jpg" alt="">-->
+<!--									</a>-->
+								<h5 ><u>Movie Name</u> :
+										{{movie_details.name}}</h5>
+								<h5><u>Movie Description</u> :<span class="definition">{{movie_details.desc}}</span></h5>
+								<h5><u>Released Year</u> : {{movie_details.year}}</h5>
+								<h5><u>Starring</u> : {{movie_details.starring}}</h5>
+								<h5><u>Director</u> : {{movie_details.director}}</h5>
+								<h5><u>Producer</u> : {{movie_details.producer}}</h5>
+								<h5><u>Language</u> : {{movie_details.language}}</h5>
+								<h5><u>Running Time</u> : {{movie_details.run_time}} hours</h5>
+								<h5><u>Trailer Link</u> : <a href="{{movie_details.youtube_link}}" class="btn btn-danger" type="submit" style="color:white;">Watch Trailer <i class="fa-brands fa-youtube" style="color:white;"></i></a></h5>
+
+
+<!--								<div class="media-body response-text-right">-->
+<!--									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,There are many variations of passages of Lorem Ipsum available,-->
+<!--										sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.There are many variations of passages of Lorem Ipsum available.</p>-->
+<!--									<ul>-->
+<!--										<li>October 15, 2016</li>-->
+<!--										<li><a href="single.html"><i class="fa fa-reply" aria-hidden="true"></i> Reply</a></li>-->
+<!--									</ul>-->
+<!--									<div class="media response-info">-->
+<!--										<div class="media-left response-text-left">-->
+<!--											<a href="#">-->
+<!--												<img class="media-object" src="images/admin.jpg" alt="">-->
+<!--											</a>-->
+<!--											<h5><a href="#">Admin</a></h5>-->
+<!--										</div>-->
+<!--										<div class="media-body response-text-right">-->
+<!--											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,There are many variations of passages of Lorem Ipsum available,-->
+<!--												sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.There are many variations of passages of Lorem Ipsum available.</p>-->
+<!--											<ul>-->
+<!--												<li>November 02, 2016</li>-->
+<!--												<li><a href="single.html"><i class="fa fa-reply" aria-hidden="true"></i> Reply</a></li>-->
+<!--											</ul>-->
+<!--										</div>-->
+<!--										<div class="clearfix"> </div>-->
+<!--									</div>-->
+<!--								</div>-->
+								<div class="clearfix"> </div>
+							</div>
+<!--							<div class="media response-info">-->
+<!--								<div class="media-left response-text-left">-->
+<!--									<a href="#">-->
+<!--										<img class="media-object" src="images/admin.jpg" alt="">-->
+<!--									</a>-->
+<!--									<h5><a href="#">Admin</a></h5>-->
+<!--								</div>-->
+<!--								<div class="media-body response-text-right">-->
+<!--									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,There are many variations of passages of Lorem Ipsum available,-->
+<!--										sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.There are many variations of passages of Lorem Ipsum available.</p>-->
+<!--									<ul>-->
+<!--										<li>November 03, 2016</li>-->
+<!--										<li><a href="single.html"><i class="fa fa-reply" aria-hidden="true"></i> Reply</a></li>-->
+<!--									</ul>-->
+<!--								</div>-->
+<!--								<div class="clearfix"> </div>-->
+<!--							</div>-->
+						</div>
+											<div class="all-comments-info">
+												 <h5 >Write your reviews</h5>
+												<div class="agile-info-wthree-box">
+													<form method="post" action="{% url 'movieapp:thank_page' %}">
+														{% csrf_token %}
+													   <div class="col-md-6 form-info">
+													   <label for="name">Your Name</label>
+														<input type="text" name="name" placeholder="Your Name" id="name" required="">
+														   {{ form.name.errors }}
+													   <label for="email">Your Email</label>
+														<input type="email" name="email" placeholder="Your Email" id="email" required="">
+														   {{ form.email.errors }}
+														<label for="phone">Your Phone</label>
+														<input type="text" name="phone" placeholder="Your Phone" id="phone" required="">
+														   {{ form.phone.errors }}
+
+													  </div>
+													   <div class="col-md-6 form-info">
+														<label for="msg">Message</label>
+														<textarea placeholder="Message" required="" id="msg" name="msg"></textarea>
+													   		{{ form.msg.errors }}
+														<input type="submit" value="SEND">
+													 </div>
+													 <div class="clearfix"> </div>
+
+
+													</form>
+												</div>
+											</div>
+								   </div>
+<!--								   <div class="col-md-4 latest-news-agile-right-content">-->
+<!--								   <h4 class="side-t-w3l-agile">For Latest <span>Movies</span></h4>-->
+<!--										<div class="side-bar-form">-->
+<!--										 <form action="#" method="post">-->
+<!--											<input type="search" name="email" placeholder="Search here...." required="required">-->
+<!--											<input type="submit" value=" ">-->
+<!--										 </form>-->
+<!--									    </div>-->
+<!--								      <h4 class="side-t-w3l-agile">Hot <span>Topics</span></h3>-->
+<!--									    <ul class="side-bar-agile">-->
+<!--										   <li><a href="single.html">John Abraham, Sonakshi Sinha and Tahir ...</a><p>Sep 29, 2016</p></li>-->
+<!--										   <li><a href="single.html">Romantic drama about two people finding out that love</a><p>Feb 3, 2016</p></li>-->
+<!--										   <li><a href="single.html">Storks have moved on from delivering babies to packages ...</a><p>Aug 1, 2016</p></li>-->
+<!--										   <li><a href="single.html">John Abraham, Sonakshi Sinha and Tahir ...</a><p>Sep 29, 2016</p></li>-->
+<!--										   <li><a href="single.html">John Abraham, Sonakshi Sinha and Tahir ...</a><p>Sep 29, 2016</p></li>-->
+<!--										</ul>-->
+<!--										<h4 class="side-t-w3l-agile">Latest <span>Trailer</span></h3>-->
+<!--										<div class="video_agile_player sidebar-player">-->
+<!--										            <div class="video-grid-single-page-agileits">-->
+<!--														<div data-video="fNKUgX8PhMA" id="video1"> <img src="images/22.jpg" alt="" class="img-responsive"> <div id="play"></div></div>-->
+<!--													</div>-->
+
+
+<!--										        <div class="player-text side-bar-info">-->
+<!--												<p class="fexi_header">Me Before You </p>-->
+<!--												<p class="fexi_header_para"><span class="conjuring_w3">Story Line<label>:</label></span>Me Before You Official Trailer #2 (2016) - Emilia Clarke, Sam Claflin Movie HD-->
+
+<!--A girl in a small town forms an unlikely....</p>-->
+<!--												<p class="fexi_header_para"><span>Release On<label>:</label></span>Feb 3, 2016 </p>-->
+<!--												<p class="fexi_header_para">-->
+<!--													<span>Genres<label>:</label> </span>-->
+<!--													<a href="genre.html">Drama</a> |-->
+<!--													<a href="genre.html">Adventure</a> |-->
+<!--													<a href="genre.html">Family</a>-->
+<!--												</p>-->
+<!--												<p class="fexi_header_para fexi_header_para1"><span>Star Rating<label>:</label></span>-->
+<!--													<a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>-->
+<!--													<a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>-->
+<!--													<a href="#"><i class="fa fa-star-half-o" aria-hidden="true"></i></a>-->
+<!--													<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>-->
+<!--													<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>-->
+<!--												</p>-->
+<!--											</div>-->
+
+<!--										    </div>-->
+<!--											<div class="clearfix"> </div>-->
+<!--											<div class="agile-info-recent">-->
+<!--											<h4 class="side-t-w3l-agile">Latest <span>Trailer</span></h4>-->
+<!--											<div class="w3ls-recent-grids">-->
+<!--												<div class="w3l-recent-grid">-->
+<!--													<div class="wom">-->
+<!--														<a href="single.html"><img src="{% static 'images/g10.jpg' %}" alt=" " class="img-responsive"></a>-->
+<!--													</div>-->
+<!--													<div class="wom-right">-->
+<!--														<h5><a href="single.html">Lorem Integer rutrum</a></h5>-->
+<!--														<p>Mauris fermentum dictum magna. Sed laoreet aliquam leo.-->
+<!--															Ut tellus dolor, dapibus eget.</p>-->
+<!--															<ul class="w3l-sider-list">-->
+<!--																<li><i class="fa fa-clock-o" aria-hidden="true"></i>On Jan 12, 2016</li>-->
+<!--																<li><i class="fa fa-eye" aria-hidden="true"></i> 2602</li>-->
+<!--															</ul>-->
+<!--													</div>-->
+<!--													<div class="clearfix"> </div>-->
+<!--												</div>-->
+<!--												<div class="w3l-recent-grid">-->
+<!--													<div class="wom">-->
+<!--														<a href="single.html"><img src="images/m13.jpg" alt=" " class="img-responsive"></a>-->
+<!--													</div>-->
+<!--													<div class="wom-right">-->
+<!--															<h5><a href="single.html">Lorem Integer rutrum</a></h5>-->
+<!--														<p>Mauris fermentum dictum magna. Sed laoreet aliquam leo.-->
+<!--															Ut tellus dolor, dapibus eget.</p>-->
+<!--															<ul class="w3l-sider-list">-->
+<!--																<li><i class="fa fa-clock-o" aria-hidden="true"></i>On Mar 3, 2016</li>-->
+<!--																<li><i class="fa fa-eye" aria-hidden="true"></i> 2742</li>-->
+<!--															</ul>-->
+<!--													</div>-->
+<!--													<div class="clearfix"> </div>-->
+<!--												</div>-->
+<!--												<div class="w3l-recent-grid">-->
+<!--													<div class="wom">-->
+<!--														<a href="single.html"><img src="images/m14.jpg" alt=" " class="img-responsive"></a>-->
+<!--													</div>-->
+<!--													<div class="wom-right">-->
+<!--															<h5><a href="single.html">Lorem Integer rutrum</a></h5>-->
+<!--														    <p>Mauris fermentum dictum magna. Sed laoreet aliquam leo.-->
+<!--															Ut tellus dolor, dapibus eget.</p>-->
+<!--															<ul class="w3l-sider-list">-->
+<!--																<li><i class="fa fa-clock-o" aria-hidden="true"></i>On Oct 13, 2016</li>-->
+<!--																<li><i class="fa fa-eye" aria-hidden="true"></i> 2802</li>-->
+<!--															</ul>-->
+<!--													</div>-->
+<!--													<div class="clearfix"> </div>-->
+<!--												</div>-->
+<!--											</div>-->
+<!--										</div>-->
+
+<!--							       </div>-->
+								   <div class="clearfix"></div>
+							   </div>
+
+						</div>
+				</div>
+			<!--//content-inner-section-->
+
+{% endblock %}
+	<!--/footer-bottom-->
+		<div class="contact-w3ls" id="contact">
+			<div class="footer-w3lagile-inner">
+				<h2>Sign up for our <span>Newsletter</span></h2>
+				<p class="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus
+					tristique bibendum. Donec rutrum sed sem quis venenatis.</p>
+				<div class="footer-contact">
+					<form action="#" method="post">
+						<input type="email" name="Email" placeholder="Enter your email...." required=" ">
+						<input type="submit" value="Subscribe">
+					</form>
+				</div>
+					<div class="footer-grids w3-agileits">
+						<div class="col-md-2 footer-grid">
+						<h4>Release</h4>
+							<ul>
+								<li><a href="#" title="Release 2016">2016</a></li>
+								<li><a href="#" title="Release 2015">2015</a></li>
+								<li><a href="#" title="Release 2014">2014</a></li>
+								<li><a href="#" title="Release 2013">2013</a></li>
+								<li><a href="#" title="Release 2012">2012</a></li>
+								<li><a href="#" title="Release 2011">2011</a></li>
+							</ul>
+						</div>
+							<div class="col-md-2 footer-grid">
+						<h4>Movies</h4>
+							<ul>
+
+								<li><a href="genre.html">ADVENTURE</a></li>
+								<li><a href="comedy.html">COMEDY</a></li>
+								<li><a href="series.html">FANTASY</a></li>
+								<li><a href="series.html">ACTION  </a></li>
+								<li><a href="genre.html">MOVIES  </a></li>
+								<li><a href="horror.html">HORROR  </a></li>
+
+							</ul>
+						</div>
+
+
+							<div class="col-md-2 footer-grid">
+								<h4>Review Movies</h4>
+									<ul class="w3-tag2">
+									<li><a href="comedy.html">Comedy</a></li>
+									<li><a href="horror.html">Horror</a></li>
+									<li><a href="series.html">Historical</a></li>
+									<li><a href="series.html">Romantic</a></li>
+									<li><a href="series.html">Love</a></li>
+									<li><a href="genre.html">Action</a></li>
+									<li><a href="single.html">Reviews</a></li>
+									<li><a href="comedy.html">Comedy</a></li>
+									<li><a href="horror.html">Horror</a></li>
+									<li><a href="series.html">Historical</a></li>
+									<li><a href="series.html">Romantic</a></li>
+									<li><a href="genre.html">Love</a></li>
+									<li><a href="comedy.html">Comedy</a></li>
+									<li><a href="horror.html">Horror</a></li>
+									<li><a href="genre.html">Historical</a></li>
+
+								</ul>
+
+
+						</div>
+								<div class="col-md-2 footer-grid">
+						<h4>Latest Movies</h4>
+							<div class="footer-grid1">
+								<div class="footer-grid1-left">
+									<a href="single.html"><img src="{% static 'images/1.jpg' %}" alt=" " class="img-responsive"></a>
+								</div>
+								<div class="footer-grid1-right">
+									<a href="single.html">eveniet ut molesti</a>
+
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<div class="footer-grid1">
+								<div class="footer-grid1-left">
+									<a href="single.html"><img src="{% static 'images/2.jpg' %}" alt=" " class="img-responsive"></a>
+								</div>
+								<div class="footer-grid1-right">
+									<a href="single.html">earum rerum tenet</a>
+
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<div class="footer-grid1">
+
+								<div class="footer-grid1-left">
+									<a href="single.html"><img src="{% static 'images/4.jpg' %}" alt=" " class="img-responsive"></a>
+								</div>
+								<div class="footer-grid1-right">
+									<a href="single.html">eveniet ut molesti</a>
+
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<div class="footer-grid1">
+								<div class="footer-grid1-left">
+									<a href="single.html"><img src="{% static 'images/3.jpg' %}" alt=" " class="img-responsive"></a>
+								</div>
+								<div class="footer-grid1-right">
+									<a href="single.html">earum rerum tenet</a>
+
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+
+
+						</div>
+						<div class="col-md-2 footer-grid">
+						   <h4 class="b-log"><a href="index.html"><span>M</span>ovies <span>P</span>ro</a></h4>
+							<div class="footer-grid-instagram">
+							<a href="single.html"><img src="{% static 'images/m1.jpg' %}" alt=" " class="img-responsive"></a>
+							</div>
+							<div class="footer-grid-instagram">
+							<a href="single.html"><img src="{% static 'images/m2.jpg' %}" alt=" " class="img-responsive"></a>
+							</div>
+							<div class="footer-grid-instagram">
+								<a href="single.html"><img src="{% static 'images/m3.jpg' %}" alt=" " class="img-responsive"></a>
+							</div>
+							<div class="footer-grid-instagram">
+							<a href="single.html"><img src="{% static 'images/m4.jpg' %}" alt=" " class="img-responsive"></a>
+							</div>
+							<div class="footer-grid-instagram">
+								<a href="single.html"><img src="{% static 'images/m5.jpg' %}" alt=" " class="img-responsive"></a>
+							</div>
+							<div class="footer-grid-instagram">
+							<a href="single.html"><img src="{% static 'images/m6.jpg' %}" alt=" " class="img-responsive"></a>
+							</div>
+
+							<div class="clearfix"> </div>
+						</div>
+						<div class="clearfix"> </div>
+						<ul class="bottom-links-agile">
+								<li><a href="icons.html" title="Font Icons">Icons</a></li>
+								<li><a href="short-codes.html" title="Short Codes">Short Codes</a></li>
+								<li><a href="contact.html" title="contact">Contact</a></li>
+
+							</ul>
+					</div>
+					<h3 class="text-center follow">Connect <span>Us</span></h3>
+						<ul class="social-icons1 agileinfo">
+							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+							<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+							<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+						</ul>
+
+			 </div>
+
+			</div>
+			<div class="w3agile_footer_copy">
+				    <p>© 2017 Movies Pro. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
+			</div>
+		<a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+<script src="{% static 'js/jquery-1.11.1.min.js' %}"></script>
+	<!-- Dropdown-Menu-JavaScript -->
+			<script>
+				$(document).ready(function(){
+					$(".dropdown").hover(
+						function() {
+							$('.dropdown-menu', this).stop( true, true ).slideDown("fast");
+							$(this).toggleClass('open');
+						},
+						function() {
+							$('.dropdown-menu', this).stop( true, true ).slideUp("fast");
+							$(this).toggleClass('open');
+						}
+					);
+				});
+			</script>
+		<!-- //Dropdown-Menu-JavaScript -->
+
+
+<script type="text/javascript" src="{% static 'js/jquery.zoomslider.min.js' %}"></script>
+		<!-- search-jQuery -->
+				<script src="{% static 'js/main.js' %}"></script>
+			<script src="{% static 'js/simplePlayer.js' %}"></script>
+			<script>
+				$("document").ready(function() {
+					$("#video").simplePlayer();
+				});
+			</script>
+			<script>
+				$("document").ready(function() {
+					$("#video1").simplePlayer();
+				});
+			</script>
+			<script>
+				$("document").ready(function() {
+					$("#video2").simplePlayer();
+				});
+			</script>
+				<script>
+				$("document").ready(function() {
+					$("#video3").simplePlayer();
+				});
+			</script>
+
+			<!-- pop-up-box -->
+		<script src="{% static 'js/jquery.magnific-popup.js' %}" type="text/javascript"></script>
+	<!--//pop-up-box -->
+
+			<div id="small-dialog1" class="mfp-hide">
+			<iframe src="https://player.vimeo.com/video/165197924?color=ffffff&title=0&byline=0&portrait=0"></iframe>
+	</div>
+	<div id="small-dialog2" class="mfp-hide">
+		<iframe src="https://player.vimeo.com/video/165197924?color=ffffff&title=0&byline=0&portrait=0"></iframe>
+	</div>
+	<script>
+		$(document).ready(function() {
+		$('.w3_play_icon,.w3_play_icon1,.w3_play_icon2').magnificPopup({
+			type: 'inline',
+			fixedContentPos: false,
+			fixedBgPos: true,
+			overflowY: 'auto',
+			closeBtnInside: true,
+			preloader: false,
+			midClick: true,
+			removalDelay: 300,
+			mainClass: 'my-mfp-zoom-in'
+		});
+
+		});
+	</script>
+<script src="{% static 'js/easy-responsive-tabs.js' %}"></script>
+<script>
+$(document).ready(function () {
+$('#horizontalTab').easyResponsiveTabs({
+type: 'default', //Types: default, vertical, accordion
+width: 'auto', //auto or any width like 600px
+fit: true,   // 100% fit in a container
+closed: 'accordion', // Start closed if in accordion view
+activate: function(event) { // Callback function if tab is switched
+var $tab = $(this);
+var $info = $('#tabInfo');
+var $name = $('span', $info);
+$name.text($tab.text());
+$info.show();
+}
+});
+$('#verticalTab').easyResponsiveTabs({
+type: 'vertical',
+width: 'auto',
+fit: true
+});
+});
+</script>
+<link href="{% static 'css/owl.carousel.css' %}" rel="stylesheet" type="text/css" media="all">
+<script src="{% static 'js/owl.carousel.js' %}"></script>
+<script>
+	$(document).ready(function() {
+		$("#owl-demo").owlCarousel({
+
+		 autoPlay: 3000, //Set AutoPlay to 3 seconds
+		  autoPlay : true,
+		   navigation :true,
+
+		  items : 5,
+		  itemsDesktop : [640,4],
+		  itemsDesktopSmall : [414,3]
+
+		});
+
+	});
+</script>
+
+<!--/script-->
+<script type="text/javascript" src="{% static 'js/move-top.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/easing.js' %}"></script>
+
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
+				});
+			});
+</script>
+ <script type="text/javascript">
+						$(document).ready(function() {
+							/*
+							var defaults = {
+					  			containerID: 'toTop', // fading element id
+								containerHoverID: 'toTopHover', // fading element hover id
+								scrollSpeed: 1200,
+								easingType: 'linear'
+					 		};
+							*/
+
+							$().UItoTop({ easingType: 'easeOutQuart' });
+
+						});
+					</script>
+<!--end-smooth-scrolling-->
+	<script src="{% static 'js/bootstrap.js' %}"></script>
+
+
+
+</body>
+</html>
